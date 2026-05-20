@@ -1,9 +1,10 @@
 package com.example.server.data;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 
-public class Customer {
+public class Customer implements Serializable {
     private long id;
     private String login;
     private String pasvord;

@@ -36,6 +36,8 @@ android {
 }
 
 dependencies {
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.picasso:picasso:2.71828")
     implementation("androidx.navigation:navigation-fragment:2.9.8")
     implementation("androidx.navigation:navigation-ui:2.9.8")
     implementation(libs.appcompat)
