@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/inputtt">
+
+
+    <fragment
+        android:id="@+id/shop"
+        android:name="com.example.server.Shop"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" >
+        <action
+            android:id="@+id/action_shop_to_tovare"
+            app:destination="@id/tovare" />
+    </fragment>
+    <fragment
+        android:id="@+id/tovare"
+        android:name="com.example.server.tovare"
+        android:label="@layout/fragment_tovare" />
+    <fragment
+        android:id="@+id/inputtt"
+        android:name="com.example.server.input.Inputtt"
+        android:label="fragment_inputtt"
+        tools:layout="@layout/fragment_inputtt" >
+        <action
+            android:id="@+id/action_inputtt_to_shop"
+            app:destination="@id/shop" />
+    </fragment>
+</navigation>
